@@ -4,14 +4,17 @@ import styles from "./App.module.css";
 import Calculator from "./Calculator/Calculator";
 import List from "./components/List";
 import ListWrapper from "./components/ListWrapper";
-
-export const ListItemsContext = React.createContext(null);
+import useListItems from "./hooks/useListItems";
+import ListItemProvider from "./providers/LIstItemsProvider";
 
 function App() {
+  const value = useListItems();
+
   return (
     <div className={styles.app}>
-      <ListWrapper />
-      <ListWrapper />
+      <ListItemProvider>
+        <ListWrapper />
+      </ListItemProvider>
 
       {/* <Calculator /> */}
     </div>

@@ -1,8 +1,7 @@
 import { useState, useContext } from "react";
 
 import styles from "./List.module.css";
-import useListItems from "../hooks/useListItems";
-import { ListItemsContext } from "../App";
+import { useListItems } from "../providers/LIstItemsProvider";
 
 function List() {
   const { listItems, handleListItemsChange } = useListItems();
