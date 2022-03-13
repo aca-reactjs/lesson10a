@@ -1,0 +1,36 @@
+.screen {
+  width: var(--width);
+  aspect-ratio: 1/1;
+  border: 1px solid black;
+  font-size: var(--fontSize);
+  border-radius: var(--radius);
+}
+
+.controllers {
+  margin-top: 4em;
+  width: var(--width);
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  font-size: var(--fontSize);
+  padding: 0.2em;
+  background-color: white;
+  outline: none;
+  width: 50px;
+  aspect-ratio: 1/1;
+  border-radius: var(--radius);
+}
+
+.common {
+  font-size: var(--fontSize);
+  padding: var(--padding);
+  width: calc(var(--width) / 2);
+  border-radius: var(--radius);
+  border: 1px solid black;
+}
+
+.input {
+  outline: none;
+}

@@ -1,0 +1,10 @@
+:root {
+  --fontSize: 1.3em;
+  --width: 300px;
+  --padding: 0.5em;
+  --radius: 8px;
+}
+
+.app {
+  padding: 1em;
+}
